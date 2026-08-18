@@ -10,13 +10,14 @@
 <body>
 <header class="navbar">
   <a class="brand" href="#inicio" aria-label="NetCom - Internet por fibra óptica">
-    <img
-        class="brand-logo"
-        src="assets/netcom-logo-exact-transparent.png"
-        alt="NetCom - Internet por fibra óptica"
-    >
+    <img class="brand-logo" src="assets/netcom-logo-exact-transparent.png" alt="NetCom - Internet por fibra óptica">
   </a>
-  <nav><a href="#planes">Paquetes</a><a href="#cobertura">Cobertura</a><a href="#contacto">Contacto</a></nav>
+  <nav>
+    <a href="#planes">Paquetes</a>
+    <a href="#cobertura">Cobertura</a>
+    <a href="#contacto">Contacto</a>
+    <a class="nav-payment" href="pagos.html">¿No has pagado?</a>
+  </nav>
 </header>
 <main>
 <section id="inicio" class="hero">
@@ -28,11 +29,7 @@
     <p class="coverage-note">La cobertura se confirma mediante inspección manual de nuestro personal.</p>
   </div>
   <div class="hero-brand">
-    <div class="hero-logo-wrap"><img
-  class="hero-logo-image"
-  src="assets/netcom-logo-exact-transparent.png"
-  alt="Logo NetCom"
-></div>
+    <div class="hero-logo-wrap"><img class="hero-logo-image" src="assets/netcom-logo-exact-transparent.png" alt="Logo NetCom"></div>
     <div class="badge"><strong>CONEXIÓN ESTABLE</strong><span>Fibra óptica hasta tu hogar</span></div>
   </div>
 </section>
@@ -46,10 +43,19 @@
   <div class="installation"><strong>Instalación: $600</strong><span>Al contratar se paga la instalación + el mes en curso.</span></div>
 </section>
 <section class="benefits section"><div class="benefit"><strong>Fibra óptica</strong><span>Tecnología de última generación.</span></div><div class="benefit"><strong>Sin restricciones</strong><span>Navega sin límites de consumo.</span></div><div class="benefit"><strong>Conexión estable</strong><span>Velocidad constante para lo que necesitas.</span></div><div class="benefit"><strong>Atención personalizada</strong><span>Estamos para ayudarte siempre.</span></div></section>
-<section id="cobertura" class="coverage"><div><p class="eyebrow">COBERTURA</p><h2>Consulta si llegamos a tu domicilio.</h2><p>La disponibilidad se confirma mediante una <strong>inspección manual realizada por nuestro personal</strong>. Así verificamos las condiciones necesarias para llevar el servicio hasta tu ubicación.</p></div><div class="locations"><span>Tixmadeje</span><span>Pueblo Nuevo</span><span>Detiña</span><span>Candeje</span><span>El Pino</span><span>Tixmadeje Grande</span><span>Tixmadeje Chiquito</span></div></section>
-<section id="contacto" class="contact section"><div class="contact-box"><p class="eyebrow">CONTRATACIÓN</p><h2>¿Listo para conectarte?</h2><p>Escríbenos por WhatsApp para contratar, solicitar información o pedir una inspección de cobertura.</p><a class="button whatsapp" href="https://wa.me/527121079888?text=Hola%20NetCom%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20planes." target="_blank" rel="noopener">Hablar por WhatsApp</a></div></section>
+<section id="cobertura" class="coverage"><div><p class="eyebrow">COBERTURA</p><h2>Consulta si llegamos a tu domicilio.</h2><p>La disponibilidad se confirma mediante una <strong>inspección manual realizada por nuestro personal</strong>. Selecciona una localidad para conocer más sobre la zona.</p></div><div class="locations">
+  <button class="location-card" type="button" data-place="Tixmadeje" data-image="assets/cobertura/tixmadeje.jpg"><span>Tixmadeje</span></button>
+  <button class="location-card" type="button" data-place="Pueblo Nuevo" data-image="assets/cobertura/pueblo-nuevo.jpg"><span>Pueblo Nuevo</span></button>
+  <button class="location-card" type="button" data-place="Detiña" data-image="assets/cobertura/detina.jpg"><span>Detiña</span></button>
+  <button class="location-card" type="button" data-place="Candeje" data-image="assets/cobertura/candeje.jpg"><span>Candeje</span></button>
+  <button class="location-card" type="button" data-place="El Pino" data-image="assets/cobertura/el-pino.jpg"><span>El Pino</span></button>
+  <button class="location-card" type="button" data-place="Tixmadeje Grande" data-image="assets/cobertura/tixmadeje-grande.jpg"><span>Tixmadeje Grande</span></button>
+  <button class="location-card" type="button" data-place="Tixmadeje Chiquito" data-image="assets/cobertura/tixmadeje-chiquito.jpg"><span>Tixmadeje Chiquito</span></button>
+</div></section>
+<section id="contacto" class="contact section"><div class="contact-box"><p class="eyebrow">CONTRATACIÓN Y ATENCIÓN</p><h2>¿Listo para conectarte?</h2><p>Escríbenos por WhatsApp para contratar, solicitar información, pedir una inspección o resolver cualquier duda.</p><div class="contact-numbers"><strong>712 107 9888</strong><strong>56 6783 1354</strong></div><a class="button whatsapp" href="https://wa.me/527121079888?text=Hola%20NetCom%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20planes." target="_blank" rel="noopener">Hablar por WhatsApp</a></div></section>
 </main>
-<footer><span>NetCom</span><span>Internet por fibra óptica</span><span>712 107 9888</span></footer>
+<footer><div><strong>NetCom</strong><span>Internet por fibra óptica</span></div><div class="footer-contact"><strong>Contacto</strong><a href="tel:+527121079888">712 107 9888</a><a href="tel:+525667831354">56 6783 1354</a></div><a class="footer-payment" href="pagos.html">¿No has realizado tu pago?</a></footer>
+<div class="location-modal" id="locationModal" aria-hidden="true"><div class="location-modal-backdrop" data-close-location></div><div class="location-modal-content" role="dialog" aria-modal="true" aria-labelledby="locationModalTitle"><button class="location-modal-close" type="button" data-close-location aria-label="Cerrar">&times;</button><img id="locationModalImage" src="" alt=""><div class="location-modal-info"><p class="eyebrow">COBERTURA NETCOM</p><h2 id="locationModalTitle"></h2><p>Esta localidad cuenta con cobertura de NetCom. La disponibilidad exacta se confirma mediante inspección manual.</p><a class="button whatsapp" id="locationModalWhatsapp" href="https://wa.me/527121079888" target="_blank" rel="noopener">Consultar cobertura</a></div></div></div>
 <script src="script.js"></script>
 </body>
 </html>
